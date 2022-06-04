@@ -1,0 +1,28 @@
+<div class="text-layout">
+  <h1>{{ nombre | titlecase }}</h1>
+  <h1>{{ valor | number }}</h1>
+  <h1>{{ obj | json }}</h1>
+</div>
+
+<button
+  pButton
+  class="p-button-help"
+  (click)="mostrarNombre()"
+  label="Cambiar nombre"
+  icon="pi pi-prime"
+  iconPos="right"
+  ></button>
+
+<!-- <button pButton type="button" label="Click" ></button>
+<p-button label="Click" ></p-button> -->
+
+<!-- <p-card header="Simple Card">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+      quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+</p-card> -->
+
+<p-card
+  [header]="nombre | titlecase"
+  subheader="Esto es un subheader">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sint reprehenderit sed sapiente repellat quam? Nulla odit quisquam assumenda quae nihil culpa blanditiis fugit quaerat, eveniet velit voluptatibus provident alias.
+</p-card>
